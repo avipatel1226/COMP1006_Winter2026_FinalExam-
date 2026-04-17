@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['admin_id'] = $admin['id'];
             $_SESSION['admin_username'] = $admin['username'];
 
+            // IMPORTANT: make sure file name matches this
             header("Location: gallery.php");
             exit;
         } else {
